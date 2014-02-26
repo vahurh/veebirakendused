@@ -409,7 +409,7 @@
           </controlProperties>
         </control>
         <control controlID="1" controlTypeID="com.balsamiq.mockups::HelpButton" x="295" y="0" w="-1" h="-1" measuredW="18" measuredH="18" zOrder="1" locked="false" isInGroup="203"/>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="22" w="582" h="86" measuredW="200" measuredH="170" zOrder="2" locked="false" isInGroup="203">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="22" w="548" h="86" measuredW="200" measuredH="170" zOrder="2" locked="false" isInGroup="203">
           <controlProperties>
             <text>FastBoy007</text>
           </controlProperties>
@@ -419,7 +419,7 @@
             <text>woW%21%21%21%20such%20a%20dope%20article%2C%20i%20liked%20the%20pix%20tho%20%3AD%3AD%3AD</text>
           </controlProperties>
         </control>
-        <control controlID="4" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="115" w="582" h="86" measuredW="200" measuredH="170" zOrder="4" locked="false" isInGroup="203">
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="115" w="548" h="86" measuredW="200" measuredH="170" zOrder="4" locked="false" isInGroup="203">
           <controlProperties>
             <text>King%20Arthur</text>
           </controlProperties>
@@ -429,14 +429,25 @@
             <text>No%2C%20fastboy%2C%20the%20pictures%20sucked%2C%20you%20idiot.%20Who%20in%20the%20hell%20tries%20that%20to%20escape%20a%20lion%3F%20So%20lucky%20it%20worked%20for%20them.%20I%20would%27ve%20stayed%20in%20the%20car.</text>
           </controlProperties>
         </control>
-        <control controlID="6" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="210" w="582" h="86" measuredW="200" measuredH="170" zOrder="6" locked="false" isInGroup="203">
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::TabBar" x="0" y="201" w="589" h="109" measuredW="197" measuredH="100" zOrder="6" locked="false" isInGroup="203">
           <controlProperties>
-            <text>FastBoy007</text>
+            <bold>true</bold>
+            <text>Lisa%20kommentaar</text>
           </controlProperties>
         </control>
-        <control controlID="7" controlTypeID="com.balsamiq.mockups::Paragraph" x="13" y="247" w="301" h="34" measuredW="200" measuredH="80" zOrder="7" locked="false" isInGroup="203">
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::Button" x="456" y="271" w="-1" h="-1" measuredW="125" measuredH="27" zOrder="7" locked="false" isInGroup="203">
           <controlProperties>
-            <text>you%20ARE%20THE%20IDIOT%21%21%20king%20dumbass%20xD%20%3ADD%3A</text>
+            <text>Lisa%20kommentaar</text>
+          </controlProperties>
+        </control>
+        <control controlID="11" controlTypeID="com.balsamiq.mockups::TextArea" x="6" y="232" w="444" h="72" measuredW="200" measuredH="140" zOrder="8" locked="false" isInGroup="203">
+          <controlProperties>
+            <text>Kirjuta%20siia%2C%20et%20kommenteerida.%0APea%20meeles%3A%20K%C4ITU%20KORRALIKULT</text>
+          </controlProperties>
+        </control>
+        <control controlID="12" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="558" y="26" w="-1" h="175" measuredW="16" measuredH="100" zOrder="9" locked="false" isInGroup="203">
+          <controlProperties>
+            <value>32</value>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>
