@@ -20,6 +20,7 @@
 	</head>
 	
 	<body class = "application">
+		
 		<div class = "header-wrap"> 
 			<div class = header>
 				<a id="logo" href="${createLink(uri: '/')}">Uudised</a>
@@ -40,7 +41,18 @@
 		</div>
 		
 		<div class = "nav-wrap">
-			<div class= "nav"></div>
+			<div class= "nav">
+				<div class = "nav-inner">
+					<ul id = "nav-list"> 
+						<li><a id="nav-avaleht" href="${createLink(uri: '/')}">Avaleht</a></li>
+						<li><a id="nav-eesti" href="${createLink(uri: '/eesti')}">Eesti</a></li>
+						<li><a id="nav-valismaa" href="${createLink(uri: '/valismaa')}">Välismaa</a></li>
+						<li><a id="nav-poliitika" href="${createLink(uri: '/poliitika')}">Sport</a></li>					
+						<li><a id="nav-sport" href="${createLink(uri: '/sport')}">Sport</a></li>
+						<li><a id="nav-kultuur" href="${createLink(uri: '/kultuur')}">Kultuur</a></li>
+					</ul>
+				</div>	
+			</div>
 		</div>
 		
 		<div class = "main-wrap">
@@ -60,7 +72,7 @@
 		
 		<div class="footer-wrap">
 			<div class = "footer">
-				@ Uudised 2014
+				@ Uudised 2016
 			</div>
 		</div>
 		<r:layoutResources />

@@ -11,10 +11,15 @@
 .login {width: 960px; margin: 0 auto;}
 
 .header {border: 1px solid; height: 40px}
-.nav {border: 1px solid #ddd; height: 50px}
 
 .header #logo {float: left; margin-left: 10px}
 .header #navPane {float:right; margin-right: 10px}
+
+.nav {margin-bottom: 80px;}
+.nav-inner {height: 20px; width: 422px; margin: 0 auto;}
+.nav li {float: left; list-style: none; padding: 0 7px;}
+.nav li a {text-decoration: none; display: block;}
+
 
 /*.login #loginForm {display: none}*/
 .login #loginBox {float:left; margin-top: 40px; margin-bottom: 40px}

@@ -4,13 +4,18 @@ class Article {
 	String title
 	String descriptionShort
 	String descriptionLong
-	String introduction
 	String content
-	Date date
 	User author
-	int priority
+	String priority
 	int views
+	Date dateCreated = new Date()
+	
 
     static constraints = {
+		title blank:false
+		descriptionShort(maxSize: 5000)
+		descriptionLong(maxSize: 5000)
+		content(maxSize: 5000)
+		
     }
 }

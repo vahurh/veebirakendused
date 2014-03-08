@@ -7,6 +7,11 @@
 		<g:javascript library="jquery" />
 	</head>
 	<body id="body">
+		
+		<div id = "highlights">
+			<g:render template="highlights" collection="${highlights}" var = "article" />
+		</div>
+		
 		<h1>Värskeimad uudised Delfi kommentaariumist!</h1>
 		<p>Kes on USA mõjuagent? Kes oleks võinud majast väljatulemise asemel end põlema panna? Kõik ja rohkem veel siit!</p>
 		
