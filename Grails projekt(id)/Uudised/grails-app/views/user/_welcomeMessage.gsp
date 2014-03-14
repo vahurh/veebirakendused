@@ -4,7 +4,7 @@
 		<div id="quickaccess"><a href="#">${session?.user?.firstName}</a>, <g:link controller="user" action="logout">Logi välja</g:link></div>
 		<nav id="navigation" class="clearfix">
 			<ul>
-				<li class="separator"><g:link controller="user" action="favorites">Lemmikud</g:link></li>
+				<li class="separator"><g:link controller="user" action="favorites">Sinu artiklid</g:link></li>
 				<li><g:link controller="news" action="main">Pealeht</g:link></li>
 			</ul>
 		</nav>
@@ -15,7 +15,7 @@
 		Teretulemast 
 		<span id="userFirstName">${session?.user?.firstName}!</span>
 		<br><br>
-		Sul on (${session.user.favorites?.size() ?: 0}) lemmik artiklit.
+		Oled teinud (${session.user.articlesPublished?.size() ?: 0}) artiklit .
 		<br>
 	</div>
 </div>

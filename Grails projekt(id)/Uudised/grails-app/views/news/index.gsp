@@ -1,19 +1,22 @@
 
 <html>
 	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 		<meta name="layout" content="main">
 		<title>Uudised</title>
 		<g:javascript library="jquery" />
 	</head>
-	<body id="body">
+	<body>
 		
-		<div id = "highlights">
+		<div class = "highlights">
 			<g:render template="highlights" collection="${highlights}" var = "article" />
 		</div>
 		
-		<h1>Värskeimad uudised Delfi kommentaariumist!</h1>
-		<p>Kes on USA mõjuagent? Kes oleks võinud majast väljatulemise asemel end põlema panna? Kõik ja rohkem veel siit!</p>
+		<div class = "bigPanelNew">
+			<g:render template="bigPanel" model ="[articles: bigPanelNew]" />
+		</div>
+		
+		
 		
 		<g:if test="${!session?.user}">
 		

@@ -31,7 +31,7 @@ printHtmlPart(9)
 printHtmlPart(10)
 expressionOut.print(session?.user?.firstName)
 printHtmlPart(11)
-expressionOut.print(session.user.favorites?.size() ?: 0)
+expressionOut.print(session.user.articlesPublished?.size() ?: 0)
 printHtmlPart(12)
 }
 public static final Map JSP_TAGS = new HashMap()
@@ -39,7 +39,7 @@ protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1393590654773L
+public static final long LAST_MODIFIED = 1394363766593L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'html'

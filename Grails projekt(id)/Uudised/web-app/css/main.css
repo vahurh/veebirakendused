@@ -11,6 +11,8 @@
 .login {width: 960px; margin: 0 auto;}
 
 .header {border: 1px solid; height: 40px}
+.article-wrap {min-height: 1000px;}
+
 
 .header #logo {float: left; margin-left: 10px}
 .header #navPane {float:right; margin-right: 10px}
@@ -19,6 +21,29 @@
 .nav-inner {height: 20px; width: 422px; margin: 0 auto;}
 .nav li {float: left; list-style: none; padding: 0 7px;}
 .nav li a {text-decoration: none; display: block;}
+
+.highlights a,
+.bigPanel a {text-decoration:none;}
+.highlights a:visited,
+.bigPanel a:visited {color:#000;}
+.highlights a:hover,
+.bigPanel a:hover{text-decoration:underline;}
+
+
+.highlightArticle {margin-bottom: 10px;}
+.highlightPhoto {max-height: 250px;}
+
+.bigHighlight-img {max-height: 150px;}
+.bigMedium-img {max-height: 120px; max-width: 120px;}
+
+#bigHighlight-title,
+#bigHighlight-intro,
+#bigMedium-title,
+#bigMedium-intro {max-width: 240px;}
+
+#articleView-intro,
+#articleView-content {max-width: 550px;}
+#articleView-intro {font-weight: bold;}
 
 
 /*.login #loginForm {display: none}*/

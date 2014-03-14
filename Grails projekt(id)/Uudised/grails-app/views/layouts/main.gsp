@@ -47,7 +47,7 @@
 						<li><a id="nav-avaleht" href="${createLink(uri: '/')}">Avaleht</a></li>
 						<li><a id="nav-eesti" href="${createLink(uri: '/eesti')}">Eesti</a></li>
 						<li><a id="nav-valismaa" href="${createLink(uri: '/valismaa')}">Välismaa</a></li>
-						<li><a id="nav-poliitika" href="${createLink(uri: '/poliitika')}">Sport</a></li>					
+						<li><a id="nav-poliitika" href="${createLink(uri: '/poliitika')}">Poliitika</a></li>					
 						<li><a id="nav-sport" href="${createLink(uri: '/sport')}">Sport</a></li>
 						<li><a id="nav-kultuur" href="${createLink(uri: '/kultuur')}">Kultuur</a></li>
 					</ul>

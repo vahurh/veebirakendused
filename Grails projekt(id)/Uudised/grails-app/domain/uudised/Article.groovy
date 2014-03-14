@@ -2,20 +2,21 @@ package uudised
 
 class Article {
 	String title
-	String descriptionShort
-	String descriptionLong
+	String intro
 	String content
-	User author
 	String priority
-	int views
+	String category
 	Date dateCreated = new Date()
+	byte[] photo
+	int views
 	
+	static hasOne = [author: User]
 
     static constraints = {
 		title blank:false
-		descriptionShort(maxSize: 5000)
-		descriptionLong(maxSize: 5000)
+		intro(maxSize: 5000)
 		content(maxSize: 5000)
-		
+		photo(maxSize: 1024 * 1024, nullable:true)
     }
 }
+

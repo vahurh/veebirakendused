@@ -5,7 +5,8 @@ class User {
 	String password
 	String firstName
 	String lastName
-	static hasMany = [favorites:Article]
+	static hasMany = [articlesPublished:Article]
+	
 
     static constraints = {
 		login blank:false, size:5..15,matches:/[\S]+/, unique: true

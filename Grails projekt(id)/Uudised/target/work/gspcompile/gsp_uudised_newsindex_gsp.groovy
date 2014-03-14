@@ -33,25 +33,27 @@ createTagBody(1, {->
 printHtmlPart(4)
 invokeTag('render','g',12,['template':("highlights"),'collection':(highlights),'var':("article")],-1)
 printHtmlPart(5)
-if(true && (!session?.user)) {
+invokeTag('render','g',16,['template':("bigPanel"),'model':([articles: bigPanelNew])],-1)
 printHtmlPart(6)
-invokeTag('render','g',22,['template':("/user/loginBox")],-1)
+if(true && (!session?.user)) {
 printHtmlPart(7)
-}
+invokeTag('render','g',25,['template':("/user/loginBox")],-1)
 printHtmlPart(8)
-createClosureForHtmlPart(9, 2)
-invokeTag('script','r',34,[:],2)
-printHtmlPart(10)
-})
-invokeTag('captureBody','sitemesh',36,['id':("body")],1)
+}
+printHtmlPart(9)
+createClosureForHtmlPart(10, 2)
+invokeTag('script','r',37,[:],2)
 printHtmlPart(11)
+})
+invokeTag('captureBody','sitemesh',39,[:],1)
+printHtmlPart(12)
 }
 public static final Map JSP_TAGS = new HashMap()
 protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1394188430764L
+public static final long LAST_MODIFIED = 1394621915252L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'html'
