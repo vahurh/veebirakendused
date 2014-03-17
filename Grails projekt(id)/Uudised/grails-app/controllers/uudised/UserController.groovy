@@ -27,6 +27,7 @@ class UserController {
 				session.user = u
 				redirect controller:"news"
 			} else {
+			
 				return [user:u]
 			}
 		}

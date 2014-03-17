@@ -8,6 +8,8 @@
 	</head>
 	<body>
 		
+		<g:link controller="article" action="create">Create article</g:link>
+				
 		<div class = "highlights">
 			<g:render template="highlights" collection="${highlights}" var = "article" />
 		</div>

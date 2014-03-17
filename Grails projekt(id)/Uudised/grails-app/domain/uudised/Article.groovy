@@ -13,6 +13,7 @@ class Article {
 	static hasOne = [author: User]
 
     static constraints = {
+		author nullable:true
 		title blank:false
 		intro(maxSize: 5000)
 		content(maxSize: 5000)
