@@ -1,9 +1,10 @@
 package uudised
+import grails.plugin.springsecurity.annotation.Secured
 
 class ArticleController {
 	
 	def index() { }
-	
+	def springSecurityService
 	def displayImage() {
 		
 		def article = Article.get(params.id)
@@ -16,7 +17,9 @@ class ArticleController {
 		[article: Article.get(params.id)]
 	}
 	
+	@Secured(['ROLE_USER', 'ROLE_FACEBOOK', 'IS_AUTHENTICATED_FULLY'])
 	def create() {
+		def currentUser = currentUser()
 		if(request.method == 'POST') {
 			def a = new Article()
 			a.properties['title', 'intro', 'content', 'priority', 'category'] = params
@@ -31,13 +34,17 @@ class ArticleController {
 				return [article:a]
 			}
 			a.photo = f.bytes
-			a.author = User.findByLogin("autor")
+			a.author = currentUser
 			if(a.save()) {
 				redirect controller:"news"
 			} else {
 				return [article:a]
 			}
 		}	
+	}
+	
+	private currentUser() {
+		return User.get(springSecurityService.principal.id)
 	}
 	
 

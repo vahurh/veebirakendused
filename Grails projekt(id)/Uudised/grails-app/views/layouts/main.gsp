@@ -26,14 +26,16 @@
 				<a id="logo" href="${createLink(uri: '/')}">Uudised</a>
 						
 				<div id="navPane">
-					<g:if test="${session.user}">
+					<sec:ifLoggedIn>
 						<g:link controller="user" action="favorites">My favorites</g:link>
-					</g:if>
-					<g:else>
+						<g:link controller="Logout">Log out</g:link>
+					</sec:ifLoggedIn>
+					<sec:ifNotLoggedIn>
 						<div id="registerPane">
 							<g:link controller="user" action="register">Register</g:link>
+							<g:link controller="Login">Log in</g:link>
 						</div>
-					</g:else>
+					</sec:ifNotLoggedIn>
 				</div>
 						
 
@@ -49,7 +51,7 @@
 						<li><a id="nav-valismaa" href="${createLink(uri: '/valismaa')}">Välismaa</a></li>
 						<li><a id="nav-poliitika" href="${createLink(uri: '/poliitika')}">Poliitika</a></li>					
 						<li><a id="nav-sport" href="${createLink(uri: '/sport')}">Sport</a></li>
-						<li><a id="nav-kultuur" href="${createLink(uri: '/kultuur')}">Kultuur</a></li>
+						<li><a id="nav-kultuur" href="${createLink(uri: '/kultuur')}">Kultuur</a></li>						
 					</ul>
 				</div>	
 			</div>

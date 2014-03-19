@@ -113,3 +113,26 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'uudised.SecUser'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'uudised.SecUserSecRole'
+grails.plugin.springsecurity.authority.className = 'uudised.SecRole'
+grails.plugin.springsecurity.rejectIfNoRule = false
+grails.plugin.springsecurity.logout.postOnly = false
+grails.plugin.springsecurity.fii.rejectPublicInvocations = false
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                              ['permitAll'],
+	'/index':                         ['permitAll'],
+	'/index.gsp':                     ['permitAll'],
+	'/**/js/**':                      ['permitAll'],
+	'/**/css/**':                     ['permitAll'],
+	'/**/images/**':                  ['permitAll'],
+	'/**/favicon.ico':                ['permitAll']
+]
+
+
+grails.plugin.springsecurity.facebook.domain.classname='uudised.FacebookUser'
+grails.plugin.springsecurity.facebook.appId='418396938295438'
+grails.plugin.springsecurity.facebook.secret='78636b4d7fe4984c48811c8818381065'

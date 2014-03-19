@@ -40,6 +40,9 @@ grails.project.dependency.resolution = {
         mavenLocal()
         grailsCentral()
         mavenCentral()
+		
+		mavenRepo 'http://repo.spring.io/milestone'
+	
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
@@ -50,6 +53,9 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
         // runtime 'mysql:mysql-connector-java:5.1.27'
         // runtime 'org.postgresql:postgresql:9.3-1100-jdbc41'
+		
+		//Following dependencies are optional. Used for examples how you can extend default plugin behaviour
+		compile ("org.springframework.social:spring-social-core:1.0.3.RELEASE", "org.springframework.social:spring-social-facebook:1.0.3.RELEASE") {transitive = false} 
     }
 
     plugins {
@@ -59,6 +65,8 @@ grails.project.dependency.resolution = {
         // plugins for the compile step
         compile ":scaffolding:2.0.2"
         compile ':cache:1.1.1'
+		compile ':spring-security-core:2.0-RC2'
+		compile "org.grails.plugins:spring-security-facebook:0.15.2-CORE2"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate:3.6.10.8" // or ":hibernate4:4.3.1.1"

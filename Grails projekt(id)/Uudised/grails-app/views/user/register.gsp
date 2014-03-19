@@ -15,10 +15,10 @@
 		        </div>
 				<g:form action="register" name="registerForm" class="form form-horizontal">
 					<div class="input clearfix">
-						<label for="login">Login <span class="required">*</span></label>
-						<g:textField required="true" name="login" value="${user?.login}" />
-		                <g:hasErrors  bean="${user}" field="login">
-		                    <p class="error"><g:fieldError bean="${user}" field="login" /></p>
+						<label for="username">Username <span class="required">*</span></label>
+						<g:textField required="true" name="username" value="${user?.username}" />
+		                <g:hasErrors  bean="${user}" field="username">
+		                    <p class="error"><g:fieldError bean="${user}" field="username" /></p>
 		                </g:hasErrors>
 					</div>
 					<div class="input clearfix">

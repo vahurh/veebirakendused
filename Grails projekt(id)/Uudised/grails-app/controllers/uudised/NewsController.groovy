@@ -1,10 +1,12 @@
 package uudised
 import uudised.Article
 import uudised.User
+import grails.plugin.springsecurity.annotation.Secured
 
 
 class NewsController {
 
+	@Secured(['permitAll'])
 	def index() {
 		def highlights = highlightedArticles()
 		def bigPanelNew = bigPanelNewArticles() 

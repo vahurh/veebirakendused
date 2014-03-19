@@ -1,4 +1,6 @@
 package uudised
+import uudised.SecUserSecRole
+import uudised.SecRole
 
 
 class UserController {
@@ -19,15 +21,15 @@ class UserController {
 	def register() {
 		if(request.method == 'POST') {
 			def u = new User()
-			u.properties['login', 'password', 'firstName', 'lastName'] = params
+			u.properties['username', 'password', 'firstName', 'lastName'] = params
+			def userRole = SecRole.findByAuthority('ROLE_USER')
 			if(u.password != params.confirm) {
 				u.errors.rejectValue("password", "user.password.dontmatch")
 				return [user:u]
 			} else if(u.save()) {
-				session.user = u
+				SecUserSecRole.create(u, userRole)
 				redirect controller:"news"
 			} else {
-			
 				return [user:u]
 			}
 		}
