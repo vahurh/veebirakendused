@@ -15,6 +15,9 @@
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
 
+		<!--Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+
 		<!-- Bootstrap -->
     	<link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
 
@@ -52,8 +55,9 @@
 							<g:link controller="Logout">Logi välja</g:link>
 						</sec:ifLoggedIn>
 						<sec:ifNotLoggedIn>						
-								<g:link elementId ="ifNotLoggedIn" controller="user" action="register">Registreeri</g:link>
-								<g:link elementId ="ifNotLoggedIn" controller="Login">Logi sisse</g:link>
+								<g:link elementId ="registreeri" controller="user" action="register">Registreeri</g:link>
+								|
+								<g:link elementId ="logiSisse" controller="Login">Logi sisse</g:link>
 						</sec:ifNotLoggedIn>
 				</div>
 			</div>

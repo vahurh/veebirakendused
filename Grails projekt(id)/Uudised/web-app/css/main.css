@@ -41,30 +41,28 @@
 	margin-top: 7px;
 }
 
-.header-logo #logo
+#logo
 {
 	text-decoration: none;
 	font-size: 20px;
 	color: white;
+	font-family: "Ubuntu Mono";
 }
 
 .header-register
 {
-	float: right; 
-	margin-top: auto;
-	margin-bottom: auto;
+	float: right;
+	margin-top: 12px;
+	color: white;
 }
 
-.header-login
+#registreeri,
+#logiSisse
 {
-	list-style-type: none;
-}
-
-
-a #ifNotLoggedIn
-{
-	text-decoration: none !important; 
-	color: white !important;
+	font-size: 14px;
+	text-decoration: none; 
+	color: white;
+	font-family: "Ubuntu Mono";
 }
 .nav 
 {
