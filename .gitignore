@@ -1,1 +1,5 @@
-target
+/Grails projekt(id)/Uudised/target
+*.class
+
+*.class
+/Grails projekt(id)/Uudised/target-eclipse

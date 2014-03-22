@@ -14,6 +14,25 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
+
+		<!-- Bootstrap -->
+    	<link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
+
+
+    	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   		
+   		<!--[if lt IE 9]>
+     		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+   		
+   		<![endif]-->
+
+   		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+   		<script src="js/bootstrap.min.js"></script>
+
 		<g:layoutHead/>
 		<g:javascript library="application"/>		
 		<r:layoutResources />
@@ -22,23 +41,29 @@
 	<body class = "application">
 		
 		<div class = "header-wrap"> 
-			<div class = header>
+			<div class = "header">
 				<a id="logo" href="${createLink(uri: '/')}">Uudised</a>
-						
-				<div id="navPane">
-					<sec:ifLoggedIn>
-						<g:link controller="user" action="favorites">My favorites</g:link>
+				<sec:ifLoggedIn>
+					<div class="navPane">
+						<span id="navPane"><g:link controller="user" action="favorites">My favorites</g:link></span>
 						<g:link controller="Logout">Log out</g:link>
-					</sec:ifLoggedIn>
-					<sec:ifNotLoggedIn>
-						<div id="registerPane">
-							<g:link controller="user" action="register">Register</g:link>
-							<g:link controller="Login">Log in</g:link>
-						</div>
-					</sec:ifNotLoggedIn>
-				</div>
-						
+					</div>
+				</sec:ifLoggedIn>
+				<sec:ifNotLoggedIn>
+					<div class="registerPane">
+						<g:link controller="user" action="register">Register</g:link>
+						<g:link controller="Login">Log in</g:link>
+					</div>
+				</sec:ifNotLoggedIn>
+			</div>
+		</div>
 
+
+		<!-- BOOTSTRAPI KATSETUS -->
+
+		<div class="container">
+			<div class="well">
+				Container
 			</div>
 		</div>
 		
@@ -49,9 +74,10 @@
 						<li><a id="nav-avaleht" href="${createLink(uri: '/')}">Avaleht</a></li>
 						<li><a id="nav-eesti" href="${createLink(uri: '/eesti')}">Eesti</a></li>
 						<li><a id="nav-valismaa" href="${createLink(uri: '/valismaa')}">Välismaa</a></li>
-						<li><a id="nav-poliitika" href="${createLink(uri: '/poliitika')}">Poliitika</a></li>					
+						<li><a id="nav-poliitika" href="${createLink(uri: '/poliitika')}">Poliitika</a></li>
 						<li><a id="nav-sport" href="${createLink(uri: '/sport')}">Sport</a></li>
-						<li><a id="nav-kultuur" href="${createLink(uri: '/kultuur')}">Kultuur</a></li>						
+						<li><a id="nav-kultuur" href="${createLink(uri: '/kultuur')}">Kultuur</a></li>	
+						<li><a id="nav-kultuur" href=""></li>					
 					</ul>
 				</div>	
 			</div>
