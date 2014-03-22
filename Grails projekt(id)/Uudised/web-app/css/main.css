@@ -1,29 +1,98 @@
+.application,
 .header-wrap,
 .nav-wrap,
 .main-wrap,
 .footer-wrap,
-.login-wrap {float: left; width: 100%; clear: both;}
+.login-wrap
+{
+ 	width: 100%;
+ 	margin: 0 auto;
+ }
+
+ .header-wrap
+ {
+ 	background: -webkit-linear-gradient(top, rgba(80,0,25,1) 0%,rgba(104,0,32,1) 100%);
+ }
 
 .header,
 .nav,
 .main,
 .footer,
-.login {width: 960px; margin: 0 auto;}
+.login
+{
 
-.header {border: 1px solid; height: 40px}
-.article-wrap {min-height: 1000px;}
+	width: 960px; 
+	margin: 0 auto;
+}
 
+.header 
+{
+	height: 42px;
+}
 
-.header #logo {float: left; margin-left: 10px}
-.header #navPane {float:right; margin-right: 10px}
+.article-wrap 
+{
+	min-height: 1000px;
+}
 
-.nav {margin-bottom: 80px;}
-.nav-inner {height: 20px; width: 422px; margin: 0 auto;}
-.nav li {float: left; list-style: none; padding: 0 7px;}
-.nav li a {text-decoration: none; display: block;}
+.header-logo
+{
+	float: left;
+	margin-top: 7px;
+}
+
+#logo
+{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-family: "Ubuntu Mono";
+}
+
+.header-register
+{
+	float: right;
+	margin-top: 12px;
+	color: white;
+}
+
+#registreeri,
+#logiSisse
+{
+	font-size: 14px;
+	text-decoration: none; 
+	color: white;
+	font-family: "Ubuntu Mono";
+}
+.nav 
+{
+	margin-bottom: 80px;
+}
+
+.nav-inner 
+{
+	height: 20px; 
+	width: 422px; 
+	margin: 0 auto;
+}
+.nav li 
+{
+	float: left; 
+	list-style: none; 
+	padding: 0 7px;
+}
+
+.nav li a
+{
+	text-decoration: none; 
+	display: block;
+}
 
 .highlights a,
-.bigPanel a {text-decoration:none;}
+.bigPanel a 
+{
+	text-decoration:none;
+}
 .highlights a:visited,
 .bigPanel a:visited {color:#000;}
 .highlights a:hover,
