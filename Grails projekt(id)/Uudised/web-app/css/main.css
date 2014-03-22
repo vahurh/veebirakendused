@@ -35,19 +35,36 @@
 	min-height: 1000px;
 }
 
-.header #logo
+.header-logo
 {
-	float: left; 
-	margin-left: 10px;
+	float: left;
+	margin-top: 7px;
+}
+
+.header-logo #logo
+{
 	text-decoration: none;
+	font-size: 20px;
 	color: white;
 }
 
-.navPane,
-.registerPane
+.header-register
 {
 	float: right; 
-	margin-right: 10px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.header-login
+{
+	list-style-type: none;
+}
+
+
+a #ifNotLoggedIn
+{
+	text-decoration: none !important; 
+	color: white !important;
 }
 .nav 
 {

@@ -42,19 +42,20 @@
 		
 		<div class = "header-wrap"> 
 			<div class = "header">
-				<a id="logo" href="${createLink(uri: '/')}">Uudised</a>
-				<sec:ifLoggedIn>
-					<div class="navPane">
-						<span id="navPane"><g:link controller="user" action="favorites">My favorites</g:link></span>
-						<g:link controller="Logout">Log out</g:link>
-					</div>
-				</sec:ifLoggedIn>
-				<sec:ifNotLoggedIn>
-					<div class="registerPane">
-						<g:link controller="user" action="register">Register</g:link>
-						<g:link controller="Login">Log in</g:link>
-					</div>
-				</sec:ifNotLoggedIn>
+				<div class="header-logo">
+					<a id="logo" href="${createLink(uri: '/')}">Uudised</a>
+				</div>
+
+				<div class="header-register">
+						<sec:ifLoggedIn>
+							<g:link controller="user" action="favorites">Minu lemmikud</g:link>
+							<g:link controller="Logout">Logi välja</g:link>
+						</sec:ifLoggedIn>
+						<sec:ifNotLoggedIn>						
+								<g:link elementId ="ifNotLoggedIn" controller="user" action="register">Registreeri</g:link>
+								<g:link elementId ="ifNotLoggedIn" controller="Login">Logi sisse</g:link>
+						</sec:ifNotLoggedIn>
+				</div>
 			</div>
 		</div>
 
@@ -62,8 +63,19 @@
 		<!-- BOOTSTRAPI KATSETUS -->
 
 		<div class="container">
-			<div class="well">
-				Container
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="well">
+						Column
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="well">
+						Column
+					</div>
+				</div>
+				
 			</div>
 		</div>
 		
