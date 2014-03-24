@@ -1,6 +1,6 @@
 .application,
 .header-wrap,
-.nav-wrap,
+.navigation-wrap,
 .main-wrap,
 .footer-wrap,
 .login-wrap
@@ -9,30 +9,36 @@
  	margin: 0 auto;
  }
 
- .header-wrap
- {
- 	background: -webkit-linear-gradient(top, rgba(80,0,25,1) 0%,rgba(104,0,32,1) 100%);
- }
-
 .header,
-.nav,
 .main,
 .footer,
 .login
 {
-
-	width: 960px; 
+	max-width: 960px; 
 	margin: 0 auto;
+}
+
+.application,
+.navbar-default
+{
+	background-color: #eae5e5 !important;
+}
+
+.col-centered
+{
+	float: none;
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+.header-wrap
+{
+	background: -webkit-linear-gradient(top, rgba(80,0,25,1) 0%,rgba(104,0,32,1) 100%);
 }
 
 .header 
 {
 	height: 42px;
-}
-
-.article-wrap 
-{
-	min-height: 1000px;
 }
 
 .header-logo
@@ -64,29 +70,71 @@
 	color: white;
 	font-family: "Ubuntu Mono";
 }
-.nav 
+
+.navigation-wrap 
 {
-	margin-bottom: 80px;
+	
+	margin-top: 5px; 
+}
+@media(min-width: 800px){
+	.navbar .navbar-nav
+	{
+	    display: inline-block;
+	    float: none;
+	}
+
+	.navbar .navbar-collapse 
+	{
+	    text-align: center;
+	}	
 }
 
-.nav-inner 
+.glyphicon-plus
 {
-	height: 20px; 
-	width: 422px; 
-	margin: 0 auto;
+	font-size: 1.5em;
 }
+
 .nav li 
-{
-	float: left; 
+{ 	
 	list-style: none; 
 	padding: 0 7px;
 }
 
-.nav li a
+.nav li a,
+.navbar-brand
 {
 	text-decoration: none; 
+	color: #3D3D3D !important;
+	font-family: "Ubuntu Mono";
+	font-size: 18px;
 	display: block;
+	margin-left: 30px;
 }
+
+.carousel-ad,
+.highlights-well
+{
+	min-height: 300px !important;
+}
+
+.bigpanel-well,
+.popular-well
+{
+	min-height: 400px !important ;
+}
+
+.poliitika-well,
+.sport-well,
+.reccomendations-well
+{
+	min-height: 600px !important;
+}
+
+.article-wrap 
+{
+	min-height: 1000px;
+}
+
 
 .highlights a,
 .bigPanel a 

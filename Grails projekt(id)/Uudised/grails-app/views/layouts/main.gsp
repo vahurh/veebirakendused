@@ -41,75 +41,58 @@
 		<r:layoutResources />
 	</head>
 	
+	<!--Application start -->
 	<body class = "application">
-		
+		<!-- Page header -->
 		<div class = "header-wrap"> 
 			<div class = "header">
-				<div class="header-logo">
+				<div class="col-xs-2 col-sm-2 header-logo">
 					<a id="logo" href="${createLink(uri: '/')}">Uudised</a>
 				</div>
 
-				<div class="header-register">
+				<div class="col-xs-4 col-xs-offset-6 col-sm-3 col-sm-offset-7 header-register">
 						<sec:ifLoggedIn>
 							<g:link controller="user" action="favorites">Minu lemmikud</g:link>
 							<g:link controller="Logout">Logi välja</g:link>
 						</sec:ifLoggedIn>
 						<sec:ifNotLoggedIn>						
-								<g:link elementId ="registreeri" controller="user" action="register">Registreeri</g:link>
-								|
-								<g:link elementId ="logiSisse" controller="Login">Logi sisse</g:link>
+							<g:link elementId ="registreeri" controller="user" action="register">Registreeri</g:link>
+							|
+							<g:link elementId ="logiSisse" controller="Login">Logi sisse</g:link>
 						</sec:ifNotLoggedIn>
 				</div>
 			</div>
 		</div>
 
+		<!-- Navigation bar -->
+		<div class = "navigation-wrap">
+			<nav class = "navbar" role="navigation">
 
-		<!-- BOOTSTRAPI KATSETUS -->
-
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="well">
-						Column
-					</div>
+				<div class="navbar-header">
+					<span class="navbar-brand visible-xs">Menüü</span>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only"> Toggle Navigation</span>
+						<span class="glyphicon glyphicon-plus"></span>
+					</button>
+					
 				</div>
 
-				<div class="col-lg-6">
-					<div class="well">
-						Column
-					</div>
-				</div>
-				
-			</div>
-		</div>
-		
-		<div class = "nav-wrap">
-			<div class= "nav">
-				<div class = "nav-inner">
-					<ul id = "nav-list"> 
-						<li><a id="nav-avaleht" href="${createLink(uri: '/')}">Avaleht</a></li>
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav"> 
+						<li><a class="active" id="nav-avaleht" href="${createLink(uri: '/')}">Avaleht</a></li>
 						<li><a id="nav-eesti" href="${createLink(uri: '/eesti')}">Eesti</a></li>
 						<li><a id="nav-valismaa" href="${createLink(uri: '/valismaa')}">Välismaa</a></li>
 						<li><a id="nav-poliitika" href="${createLink(uri: '/poliitika')}">Poliitika</a></li>
 						<li><a id="nav-sport" href="${createLink(uri: '/sport')}">Sport</a></li>
-						<li><a id="nav-kultuur" href="${createLink(uri: '/kultuur')}">Kultuur</a></li>	
-						<li><a id="nav-kultuur" href=""></li>					
 					</ul>
-				</div>	
-			</div>
+				</div>
+			</nav>
 		</div>
 		
 		<div class = "main-wrap">
-			<div class = main>
-		        <div id="spinner" class="spinner" style="display:none;">
-		            <img src="${createLinkTo(dir:'images',file:'spinner.gif')}" alt="Spinner" />
-		        </div>
-		        <div id="main">
-		            <g:if test="${session?.user}">
-		                <g:render template="/user/welcomeMessage"/>
-		            </g:if>
-		            <g:javascript library="application"/>
-		        </div>
+			<div class = "main container">
+		       
 			<g:layoutBody/>
 			</div>
 		</div>
@@ -122,3 +105,16 @@
 		<r:layoutResources />
 	</body>
 </html>
+
+
+
+
+%{--  <div id="spinner" class="spinner" style="display:none;">
+		            <img src="${createLinkTo(dir:'images',file:'spinner.gif')}" alt="Spinner" />
+		        </div>
+		        <div id="main">
+		            <g:if test="${session?.user}">
+		                <g:render template="/user/welcomeMessage"/>
+		            </g:if>
+		            <g:javascript library="application"/>
+		        </div> --}%
