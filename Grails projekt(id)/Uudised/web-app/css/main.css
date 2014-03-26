@@ -104,11 +104,11 @@
 .navbar-brand
 {
 	text-decoration: none; 
-	color: #3D3D3D !important;
+	color: #3D3D3D;
 	font-family: "Ubuntu Mono";
 	font-size: 18px;
 	display: block;
-	margin-left: 30px;
+	margin-left: 20px;
 }
 
 .carousel-ad,
@@ -120,7 +120,7 @@
 .bigpanel-well,
 .popular-well
 {
-	min-height: 400px !important ;
+	min-height: 300px !important ;
 }
 
 .poliitika-well,
@@ -147,8 +147,8 @@
 .bigPanel a:hover{text-decoration:underline;}
 
 
-.highlightArticle {margin-bottom: 10px;}
-.highlightPhoto {max-height: 250px;}
+/*.highlightArticle {margin-bottom: 10px;}
+.highlightPhoto {max-height: 250px;}*/
 
 .bigHighlight-img {max-height: 150px;}
 .bigMedium-img {max-height: 120px; max-width: 120px;}

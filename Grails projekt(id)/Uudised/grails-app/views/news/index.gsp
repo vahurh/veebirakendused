@@ -15,11 +15,38 @@
 
 
 		<div class="row">
-			<div class="col-sm-12 col-md-8">
-			<div class="well highlights-well">Highlights</div>
+			<div class="col-sm-12 col-md-7">
+				<div id="myCarousel" class="carousel slide">
+					<ol class="carousel-indicators">
+					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#myCarousel" data-slide-to="1"></li>
+					    <li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="activehighlight">Highlights</div>
+							<div class="carousel-caption">
+								<h1>Päevauudised</h1>
+							</div>
+						</div>
+						<g:render template="highlights" collection="${highlights}" var = "article" />
+					</div>
+
+					<!-- Controls -->
+				    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				    	<span class="icon-prev"></span>
+				    </a>
+				    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+				    	<span class="icon-next"></span>
+				    </a>
+				</div>
+
 			</div>
-			<div class="col-md-4 hidden-sm hidden-xs">
-				<div class="well highlights-well">Ad</div>
+			<div class="col-md-5 hidden-sm hidden-xs">
+				<div class="well highlights-well">
+					Ad
+				</div>
 			</div>
 		</div>
 
@@ -86,14 +113,6 @@
 			<g:render template="bigPanel" model ="[articles: bigPanelNew]" />
 		</div>
 		 --}%
-
-	<r:script>
-		$(function() {
-		    $('#loginForm').ajaxForm(function(result) {
-		        $('#loginBox').html(result);
-		    });
-		});
-	</r:script>		
 		
 	</body>
 </html>
