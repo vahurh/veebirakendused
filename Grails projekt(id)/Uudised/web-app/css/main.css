@@ -117,10 +117,35 @@
 	min-height: 300px !important;
 }
 
+.highlight-photo
+{
+	position: relative;
+}
+
+.highlight-title
+{
+	background:#FFFFFF !important;
+    opacity: 0.5;
+    top:0;
+    left:0;
+    position: absolute;
+}
+
 .bigpanel-well,
 .popular-well
 {
 	min-height: 300px !important ;
+}
+
+.bigHighlight,
+.bigMedium
+{
+	float: left;
+}
+
+.bigTitles-title
+{
+	margin-bottom: 20px;
 }
 
 .poliitika-well,

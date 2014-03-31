@@ -43,16 +43,19 @@
 				</div>
 
 			</div>
+
 			<div class="col-md-5 hidden-sm hidden-xs">
-				<div class="well highlights-well">
-					Ad
+				<div class="ad">
+					<img class="img-responsive" src="images/reklaam.jpg">
 				</div>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-sm-8">
-				<div class="well bigpanel-well">Big News</div>
+				<div class="bigpanel-well">
+					<g:render template="bigPanel" model ="[articles: bigPanelNew]" />
+				</div>
 			</div>
 
 			<div class="col-sm-4 hidden-xs">
