@@ -11,8 +11,5 @@
 		</g:link>
 	</div>
 	<p>${article.intro}</p>
-	
-	<div class = "articleTime">
-		<p>Created: <g:formatDate format = "yyyy-MM-dd HH:mm" date = "${article.dateCreated}"/> </p>
-	</div>
+
 </div>

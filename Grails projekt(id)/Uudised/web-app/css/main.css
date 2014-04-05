@@ -18,6 +18,15 @@
 	margin: 0 auto;
 }
 
+@media(max-width: 768px){
+	.row
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+}
+
 .application,
 .navbar-default
 {
@@ -111,42 +120,57 @@
 	margin-left: 20px;
 }
 
-.carousel-ad,
-.highlights-well
+.highlight-ads,
+.ad
 {
-	min-height: 300px !important;
+	max-height: 380px;
+	overflow: hidden;
+	margin-bottom: 20px;
 }
 
-.highlight-photo
-{
-	position: relative;
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none
 }
 
-.highlight-title
+.carousel-control .icon-next,
+.carousel-control .icon-prev
 {
-	background:#FFFFFF !important;
-    opacity: 0.5;
-    top:0;
-    left:0;
-    position: absolute;
+	font-size: 100px;
+	margin-top: -70px;
 }
 
-.bigpanel-well,
-.popular-well
+.category
 {
-	min-height: 300px !important ;
+	margin-top: 0px;
+	margin-bottom: 5px;
 }
 
-.bigHighlight,
-.bigMedium
+.separator
 {
-	float: left;
+	margin-bottom: 8px;
+	margin-top: 2px;
 }
 
-.bigTitles-title
+.popular
 {
 	margin-bottom: 20px;
 }
+
+.bigTitles-title,
+.bigMedium #bigMedium-intro,
+.eesti-suured
+{
+	margin-bottom: 20px;
+}
+
+.bigHighlight-photo,
+.bigMedium-photo
+{
+	margin-bottom: 5px;
+}
+
 
 .poliitika-well,
 .sport-well,
@@ -160,7 +184,7 @@
 	min-height: 1000px;
 }
 
-
+/*
 .highlights a,
 .bigPanel a 
 {
@@ -172,8 +196,8 @@
 .bigPanel a:hover{text-decoration:underline;}
 
 
-/*.highlightArticle {margin-bottom: 10px;}
-.highlightPhoto {max-height: 250px;}*/
+.highlightArticle {margin-bottom: 10px;}
+.highlightPhoto {max-height: 250px;}
 
 .bigHighlight-img {max-height: 150px;}
 .bigMedium-img {max-height: 120px; max-width: 120px;}
@@ -188,5 +212,5 @@
 #articleView-intro {font-weight: bold;}
 
 
-/*.login #loginForm {display: none}*/
-.login #loginBox {float:left; margin-top: 40px; margin-bottom: 40px}
+.login #loginForm {display: none}
+.login #loginBox {float:left; margin-top: 40px; margin-bottom: 40px}*/

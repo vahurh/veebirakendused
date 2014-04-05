@@ -7,21 +7,15 @@
 		<g:javascript library="jquery" />
 	</head>
 	<body>
-		
 		<sec:ifLoggedIn>
-			<div id="createPanel"><g:link controller="article" action="create">Create article</g:link></div>
+			<div id="createPanel">
+				<g:link controller="article" action="create">Create article</g:link>
+			</div>
 		</sec:ifLoggedIn>
-		
 
-
-		<div class="row">
+		<div class="row highlight-ads">
 			<div class="col-sm-12 col-md-7">
 				<div id="myCarousel" class="carousel slide">
-					<ol class="carousel-indicators">
-					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					    <li data-target="#myCarousel" data-slide-to="1"></li>
-					    <li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
 
 					<div class="carousel-inner">
 						<div class="item active">
@@ -33,6 +27,12 @@
 						<g:render template="highlights" collection="${highlights}" var = "article" />
 					</div>
 
+					%{-- <ol class="carousel-indicators">
+					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#myCarousel" data-slide-to="1"></li>
+					    <li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol> --}%
+
 					<!-- Controls -->
 				    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
 				    	<span class="icon-prev"></span>
@@ -41,31 +41,18 @@
 				    	<span class="icon-next"></span>
 				    </a>
 				</div>
-
 			</div>
 
 			<div class="col-md-5 hidden-sm hidden-xs">
 				<div class="ad">
-					<img class="img-responsive" src="images/reklaam.jpg">
+					<img class="img-responsive ad-image" src="images/reklaam.jpg">
 				</div>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-sm-8">
-				<div class="bigpanel-well">
-					<g:render template="bigPanel" model ="[articles: bigPanelNew]" />
-				</div>
-			</div>
-
-			<div class="col-sm-4 hidden-xs">
-				<div class="well popular-well">Popular Tab system</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-sm-8">
-				<div class="well bigpanel-well">Big News</div>
+				<g:render template="bigPanel" model ="[articles: bigPanelNew]" />
 
 				<div class="row">
 					<div class="col-sm-6">
@@ -78,11 +65,38 @@
 			</div>
 
 			<div class="col-sm-4 hidden-xs">
-				<div class="well reccomendations-well">Reccomendations</div>
+				<div class="category-header">
+					<h4 class="category">Populaarsed</h4>
+					<hr class="separator"></hr>
+				</div>
+
+				<div class="popular tabbable">
+					<ul id="popTab" class="nav nav-tabs">
+						<li class="active"><a href="#poptäna" data-toggle="tab">Täna</a></li>
+						<li><a href="#popkuul" data-toggle="tab">Sel kuul</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="poptäna">
+							<g:render template="bigPanel" model ="[articles: bigPanelNew]" />
+						</div>
+						<div class="tab-pane" id="popkuul">Sisu1</div>
+					</div>
+				</div>
+				
+				<div class="recom tabbable">
+					<ul id="myTab" class="nav nav-tabs">
+						<li class="active"><a href="#soovitused" data-toggle="tab">Soov</a></li>
+						<li><a href="#mingitab" data-toggle="tab">Tab</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="soovitused">Sisu</div>
+						<div class="tab-pane" id="mingitab">Sisu1</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
-
+	</body>
+</html>
 
 
 
@@ -117,5 +131,4 @@
 		</div>
 		 --}%
 		
-	</body>
-</html>
+
