@@ -1,5 +1,5 @@
 
-<div class="row eesti-uudised">
+<div class="row eesti-uudised main-articles">
 	<div class="category-header">
 		<h4 class="category">Eesti</h4>
 		<hr class="separator"></hr>
@@ -62,7 +62,7 @@
 	</div>
 </div>
 
-<div class="row valismaa-uudised">
+<div class="row valismaa-uudised main-articles">
 	<div class="category-header">
 		<h4 class="category">Välismaa</h4>
 		<hr class="separator"></hr>

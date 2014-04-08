@@ -1,4 +1,3 @@
-
 <div class="item">
 	<div id ="highlight-photo">
 		<g:link controller="article" action="show" params = "[id:article.id]">

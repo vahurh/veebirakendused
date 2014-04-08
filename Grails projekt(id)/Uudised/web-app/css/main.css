@@ -30,7 +30,18 @@
 .application,
 .navbar-default
 {
-	background-color: #eae5e5 !important;
+	background-color: #fcf8f8 !important;
+}
+
+.main
+{
+	background-color: white;
+}
+
+.shadow {
+  -moz-box-shadow:    3px 3px 5px 4px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 4px #ccc;
+  box-shadow:         3px 3px 5px 4px #ccc;
 }
 
 .col-centered
@@ -42,8 +53,11 @@
 
 .header-wrap
 {
+
+	background: linear-gradient(top, rgba(80,0,25,1) 0%,rgba(104,0,32,1) 100%);
+	background: -moz-linear-gradient(top, rgba(80,0,25,1) 0%,rgba(104,0,32,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(80,0,25,1) 0%,rgba(104,0,32,1) 100%);
-}
+}	
 
 .header 
 {
@@ -83,7 +97,7 @@
 .navigation-wrap 
 {
 	
-	margin-top: 5px; 
+	margin-top: 10px; 
 }
 @media(min-width: 800px){
 	.navbar .navbar-nav
@@ -123,11 +137,20 @@
 .highlight-ads,
 .ad
 {
-	max-height: 380px;
-	overflow: hidden;
+	margin-top: 5px;
 	margin-bottom: 20px;
 }
 
+.ad
+{
+	max-height: 298px;
+	overflow: hidden;
+}
+
+#myCarousel
+{
+	margin-top: 5px;
+}
 
 .carousel-control.left,
 .carousel-control.right {
@@ -138,7 +161,13 @@
 .carousel-control .icon-prev
 {
 	font-size: 100px;
-	margin-top: -70px;
+	margin-top: -120px;
+}
+
+.main-articles
+{
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .category
@@ -182,6 +211,11 @@
 .article-wrap 
 {
 	min-height: 1000px;
+}
+
+.footer
+{
+	margin-top: 10px;
 }
 
 /*

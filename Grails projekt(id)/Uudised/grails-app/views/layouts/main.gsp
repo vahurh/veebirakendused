@@ -93,7 +93,7 @@
 		</div>
 		
 		<div class = "main-wrap">
-			<div class = "main container">
+			<div class = "main shadow container">
 		       
 			<g:layoutBody/>
 			</div>
