@@ -9,8 +9,9 @@ class NewsController {
 	@Secured(['permitAll'])
 	def index() {
 		def highlights = highlightedArticles()
-		def bigPanelNew = bigPanelNewArticles() 
-		return [highlights: highlights, bigPanelNew:bigPanelNew]
+		def bigPanelNew = bigPanelNewArticles()
+		def popularArticles = popularArticles()
+		return [highlights: highlights, bigPanelNew:bigPanelNew, popularArticles:popularArticles]
 	}
 	
 	private highlightedArticles() {
@@ -31,5 +32,14 @@ class NewsController {
 			order("dateCreated", "desc")
 		}
 		bigPanelNew
+	}
+
+	private popularArticles(){
+		def c = Article.createCriteria()
+		def popularArticles = c.list {
+			maxResults(3)
+			order("views", "desc")
+		}
+		popularArticles
 	}
 }
