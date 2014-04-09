@@ -120,7 +120,7 @@ log4j = {
 
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.auth.loginFormUrl = '/news/ajaxlogin'
-grails.plugins.springsecurity.failureHandler.defaultFailureUrl = '/news/ajaxlogin'
+grails.plugin.springsecurity.failureHandler.defaultFailureUrl = '/news/ajaxlogin'
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'uudised.SecUser'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'uudised.SecUserSecRole'
 grails.plugin.springsecurity.authority.className = 'uudised.SecRole'

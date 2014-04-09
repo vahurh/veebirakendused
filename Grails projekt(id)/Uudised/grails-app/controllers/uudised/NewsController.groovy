@@ -14,7 +14,7 @@ class NewsController {
 		/*def monthlyPopular = monthlyPopularArticles()*/
 		return [highlights: highlights, bigPanelNew:bigPanelNew, popularArticles:popularArticles]
 	}
-	
+
 	def ajaxlogin() {
 		
 	}
@@ -37,6 +37,15 @@ class NewsController {
 			order("dateCreated", "desc")
 		}
 		bigPanelNew
+	}
+
+	private popularArticles(){
+		def c = Article.createCriteria()
+		def popularArticles = c.list {
+			maxResults(3)
+			order("views", "desc")
+		}
+		popularArticles
 	}
 
 /*	private monthlyPopularArticles(){

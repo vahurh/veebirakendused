@@ -41,7 +41,8 @@
 		<g:layoutHead/>
 		<g:javascript library="application"/>
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'colorbox.css')}"> 
-		<r:require module="popup_resources" />			
+		<r:require module="popup_resources" />
+		<g:javascript library="application"/>		
 		<r:layoutResources />
 	</head>
 	
@@ -62,7 +63,8 @@
 						</sec:ifLoggedIn>
 						<sec:ifNotLoggedIn>						
 							<g:link elementId ="registreeri" controller="user" action="register">Registreeri</g:link>
-							<g:link elementId ="logiSisse" controller="news" action = "ajaxlogin">Logi sisse</g:link>
+							|
+							<g:link elementId ="logiSisse" controller="news" action="ajaxlogin">Logi sisse</g:link>
 						</sec:ifNotLoggedIn>
 				</div>
 			</div>
@@ -95,7 +97,7 @@
 		</div>
 		
 		<div class = "main-wrap">
-			<div class = "main container">
+			<div class = "main shadow container">
 		       
 			<g:layoutBody/>
 			</div>
@@ -106,7 +108,7 @@
 				@ Uudised 2016
 			</div>
 		</div>
-<g:javascript>
+		<g:javascript>
 $(document).ready(function() {
 	$("a#logiSisse").colorbox({rel:'member-popup'});
 });
