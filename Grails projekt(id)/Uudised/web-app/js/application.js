@@ -7,5 +7,3 @@ if (typeof jQuery !== 'undefined') {
 		});
 	})(jQuery);
 }
-
-// $(".article-intro").text($(".article-intro").text().substring(0,127) + '...');

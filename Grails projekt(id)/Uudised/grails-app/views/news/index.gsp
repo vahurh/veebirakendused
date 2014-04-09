@@ -18,12 +18,13 @@
 				<div id="myCarousel" class="carousel slide">
 
 					<div class="carousel-inner">
-						
-						<g:set var="listNumber" value="${1}"/>
-						%{-- <g:each in="${highlights}"> --}%
-							<g:render template="highlights" collection="${highlights}" var = "article" />
-							%{-- <g:set var="listNumber" value="${listNumber + 1}"/> --}%
-						%{-- </g:each> --}%
+						<div class="item active">
+							<div class="activehighlight">Highlights</div>
+							<div class="carousel-caption">
+								<h1>Päevauudised</h1>
+							</div>
+						</div>
+						<g:render template="highlights" collection="${highlights}" var = "article" />
 					</div>
 
 					%{-- <ol class="carousel-indicators">
@@ -76,8 +77,7 @@
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane active" id="poptäna">
-							%{-- <g:render template="bigPanel" model ="[articles: bigPanelNew]" /> --}%
-							<g:render template="popularPanel" model ="[articles: popularArticles]" />
+							<g:render template="bigPanel" model ="[articles: bigPanelNew]" />
 						</div>
 						<div class="tab-pane" id="popkuul">
 							<g:render template="popularPanel" model ="[articles: popularArticles]" />

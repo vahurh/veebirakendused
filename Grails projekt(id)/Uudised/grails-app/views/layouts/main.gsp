@@ -39,7 +39,9 @@
    		<script src="js/bootstrap.min.js"></script>
 
 		<g:layoutHead/>
-		<g:javascript library="application"/>		
+		<g:javascript library="application"/>
+		<link rel="stylesheet" href="${resource(dir: 'css', file: 'colorbox.css')}"> 
+		<r:require module="popup_resources" />			
 		<r:layoutResources />
 	</head>
 	
@@ -60,8 +62,7 @@
 						</sec:ifLoggedIn>
 						<sec:ifNotLoggedIn>						
 							<g:link elementId ="registreeri" controller="user" action="register">Registreeri</g:link>
-							|
-							<g:link elementId ="logiSisse" controller="Login">Logi sisse</g:link>
+							<g:link elementId ="logiSisse" controller="news" action = "ajaxlogin">Logi sisse</g:link>
 						</sec:ifNotLoggedIn>
 				</div>
 			</div>
@@ -94,7 +95,7 @@
 		</div>
 		
 		<div class = "main-wrap">
-			<div class = "main shadow container">
+			<div class = "main container">
 		       
 			<g:layoutBody/>
 			</div>
@@ -105,6 +106,11 @@
 				@ Uudised 2016
 			</div>
 		</div>
+<g:javascript>
+$(document).ready(function() {
+	$("a#logiSisse").colorbox({rel:'member-popup'});
+});
+</g:javascript>
 		<r:layoutResources />
 	</body>
 </html>

@@ -30,18 +30,7 @@
 .application,
 .navbar-default
 {
-	background-color: #fcf8f8 !important;
-}
-
-.main
-{
-	background-color: white;
-}
-
-.shadow {
-  -moz-box-shadow:    3px 3px 5px 4px #ccc;
-  -webkit-box-shadow: 3px 3px 5px 4px #ccc;
-  box-shadow:         3px 3px 5px 4px #ccc;
+	background-color: #eae5e5 !important;
 }
 
 .col-centered
@@ -59,11 +48,8 @@
 
 .header-wrap
 {
-
-	background: linear-gradient(top, rgba(80,0,25,1) 0%,rgba(104,0,32,1) 100%);
-	background: -moz-linear-gradient(top, rgba(80,0,25,1) 0%,rgba(104,0,32,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(80,0,25,1) 0%,rgba(104,0,32,1) 100%);
-}	
+}
 
 .header 
 {
@@ -105,7 +91,7 @@
 .navigation-wrap 
 {
 	
-	margin-top: 10px; 
+	margin-top: 5px; 
 }
 @media(min-width: 800px){
 	.navbar .navbar-nav
@@ -145,20 +131,11 @@
 .highlight-ads,
 .ad
 {
-	margin-top: 5px;
+	max-height: 380px;
+	overflow: hidden;
 	margin-bottom: 20px;
 }
 
-.ad
-{
-	max-height: 298px;
-	overflow: hidden;
-}
-
-#myCarousel
-{
-	margin-top: 5px;
-}
 
 .carousel-control.left,
 .carousel-control.right {
@@ -169,7 +146,7 @@
 .carousel-control .icon-prev
 {
 	font-size: 100px;
-	margin-top: -120px;
+	margin-top: -70px;
 }
 
 .article-intro,
@@ -260,6 +237,10 @@
 {
 	margin-top: 10px;
 }
+
+.loginForm-wrap {margin: 0 auto; padding-top: 50px;background: #fff; height: 300px; width: 300px;}
+.loginForm {margin: 0px auto; width: 160px; height: 200px; padding-top: 50px }
+#login {margin-top: 10px;}}
 
 /*
 .highlights a,
