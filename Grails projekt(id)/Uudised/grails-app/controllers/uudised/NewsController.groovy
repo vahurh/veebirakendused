@@ -13,6 +13,10 @@ class NewsController {
 		return [highlights: highlights, bigPanelNew:bigPanelNew]
 	}
 	
+	def ajaxlogin() {
+		
+	}
+	
 	private highlightedArticles() {
 		
 		def c = Article.createCriteria()

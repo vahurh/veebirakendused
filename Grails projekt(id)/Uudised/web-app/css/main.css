@@ -184,6 +184,11 @@
 	min-height: 1000px;
 }
 
+
+.loginForm-wrap {margin: 0 auto; padding-top: 50px;background: #fff; height: 300px; width: 300px;}
+.loginForm {margin: 0px auto; width: 160px; height: 200px; padding-top: 50px }
+#login {margin-top: 10px;}}
+
 /*
 .highlights a,
 .bigPanel a 
