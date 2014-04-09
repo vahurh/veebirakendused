@@ -54,8 +54,9 @@
 
 				<div class="col-xs-4 col-xs-offset-6 col-sm-3 col-sm-offset-7 header-register">
 						<sec:ifLoggedIn>
-							<g:link controller="user" action="favorites">Minu lemmikud</g:link>
-							<g:link controller="Logout">Logi välja</g:link>
+							<g:link elementId ="lemmikud" controller="user" action="favorites">Minu lemmikud</g:link>
+							|
+							<g:link  elementId ="logivalja" controller="Logout">Logi välja</g:link>
 						</sec:ifLoggedIn>
 						<sec:ifNotLoggedIn>						
 							<g:link elementId ="registreeri" controller="user" action="register">Registreeri</g:link>

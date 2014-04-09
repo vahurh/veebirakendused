@@ -11,6 +11,7 @@ class NewsController {
 		def highlights = highlightedArticles()
 		def bigPanelNew = bigPanelNewArticles()
 		def popularArticles = popularArticles()
+		/*def monthlyPopular = monthlyPopularArticles()*/
 		return [highlights: highlights, bigPanelNew:bigPanelNew, popularArticles:popularArticles]
 	}
 	
@@ -42,4 +43,13 @@ class NewsController {
 		}
 		popularArticles
 	}
+
+/*	private monthlyPopularArticles(){
+		def c = Article.createCriteria()
+		def monthlyPopular = c.list {
+			maxResults(3)
+			order("views", "asc")
+		}
+		monthlyPopular
+	}*/
 }

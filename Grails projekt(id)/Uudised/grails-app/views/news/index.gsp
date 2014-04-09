@@ -79,7 +79,9 @@
 							%{-- <g:render template="bigPanel" model ="[articles: bigPanelNew]" /> --}%
 							<g:render template="popularPanel" model ="[articles: popularArticles]" />
 						</div>
-						<div class="tab-pane" id="popkuul">Sisu1</div>
+						<div class="tab-pane" id="popkuul">
+							<g:render template="popularPanel" model ="[articles: popularArticles]" />
+						</div>
 					</div>
 				</div>
 				

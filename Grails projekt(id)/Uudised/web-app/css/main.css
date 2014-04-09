@@ -51,6 +51,12 @@
 	max-width: 960px;
 }
 
+.img-responsive
+{
+	margin: 0 auto;
+}
+
+
 .header-wrap
 {
 
@@ -86,7 +92,9 @@
 }
 
 #registreeri,
-#logiSisse
+#logiSisse,
+#lemmikud,
+#logivalja
 {
 	font-size: 14px;
 	text-decoration: none; 
@@ -164,6 +172,15 @@
 	margin-top: -120px;
 }
 
+.article-intro,
+.highlight-title
+{
+	margin-top: 5px;
+ 	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis; // This is where the magic happens
+}
+
 
 .main-articles
 {
@@ -186,6 +203,21 @@
 .popular
 {
 	margin-bottom: 20px;
+}
+
+.popular-bottom-margin
+{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+.padding-left
+{
+	padding-left: 5px !important;
+	padding-right: 25px !important;
+	word-wrap: break-word;
+	text-overflow: ellipsis;
 }
 
 .bigTitles-title,
@@ -212,6 +244,16 @@
 .article-wrap 
 {
 	min-height: 1000px;
+}
+
+.article-row
+{
+	margin-top: 25px;
+}
+
+.articleView-author
+{
+	margin-top: 5px;
 }
 
 .footer
