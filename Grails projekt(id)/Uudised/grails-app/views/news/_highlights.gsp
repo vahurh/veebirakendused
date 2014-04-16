@@ -15,6 +15,5 @@
 			<strong>${article.title}</strong>
 		</g:link>
 	</div>
-	<p class ="article-intro">${article.intro}</p>
-
+	<p class = "article-intro">${article.intro}</p>
 </div>
