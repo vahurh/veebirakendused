@@ -76,11 +76,11 @@
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane active" id="poptäna">
-							%{-- <g:render template="bigPanel" model ="[articles: bigPanelNew]" /> --}%
-							<g:render template="popularPanel" model ="[articles: popularArticles]" />
+							<g:render template="bigPanel" model ="[articles: bigPanelNew]" />
+							%{-- <g:render template="popularPanel" model ="[articles: popularArticles]" /> --}%
 						</div>
 						<div class="tab-pane" id="popkuul">
-							<g:render template="popularPanel" model ="[articles: popularArticles]" />
+							%{-- <g:render template="popularPanel" model ="[articles: popularArticles]" /> --}%
 						</div>
 					</div>
 				</div>
@@ -97,7 +97,31 @@
 				</div>
 			</div>
 		</div>
+<g:javascript>
+$(document).ready(function() {
+});
+function articleLink(address) {
+    history.pushState({}, '', "article/show/"+address);
+}
+$(window).bind("popstate", function(e) {
+    var state = e.originalEvent.state;
+  
+    if(!state) {
+		$.ajax({
+		type:'POST',
+		data:{}, 
+		url:'/Uudised/news/renderIndex',
+		success: function(data){
+			jQuery('#mainContent').html(data);
+			},
+		error:function(XMLHttpRequest,textStatus,errorThrown){}
+		});
+	}
+});
+
+</g:javascript>
 	</body>
+
 </html>
 
 

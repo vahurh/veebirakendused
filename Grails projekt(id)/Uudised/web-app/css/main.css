@@ -60,6 +60,9 @@
 	margin: 0 auto;
 }
 
+
+
+
 .header-wrap
 {
 
@@ -179,9 +182,9 @@
 .highlight-title
 {
 	margin-top: 5px;
- 	/*white-space: nowrap;
+ 	white-space: nowrap;
   	overflow: hidden;
-  	text-overflow: ellipsis; // This is where the magic happens*/
+  	text-overflow: ellipsis; // This is where the magic happens
 }
 
 

@@ -8,4 +8,4 @@ if (typeof jQuery !== 'undefined') {
 	})(jQuery);
 }
 
-$(".article-intro").text($(".article-intro").text().substring(0,127) + '...');
+// $(".article-intro").text($(".article-intro").text().substring(0,127) + '...');

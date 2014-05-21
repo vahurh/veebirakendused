@@ -19,6 +19,14 @@ class NewsController {
 		
 	}
 	
+	def renderIndex() {
+		def highlights = highlightedArticles()
+		def bigPanelNew = bigPanelNewArticles()
+		def popularArticles = popularArticles()
+		/*def monthlyPopular = monthlyPopularArticles()*/
+		return [highlights: highlights, bigPanelNew:bigPanelNew, popularArticles:popularArticles]
+	}
+	
 	private highlightedArticles() {
 		
 		def c = Article.createCriteria()

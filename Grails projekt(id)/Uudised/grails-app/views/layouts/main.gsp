@@ -47,7 +47,7 @@
 	</head>
 	
 	<!--Application start -->
-	<body class = "application">
+	<body id = "body">
 		<!-- Page header -->
 		<div class = "header-wrap"> 
 			<div class = "header">
@@ -98,8 +98,9 @@
 		
 		<div class = "main-wrap">
 			<div class = "main shadow container">
-		       
-			<g:layoutBody/>
+		    <div id = "mainContent">   
+				<g:layoutBody/>
+			</div>
 			</div>
 		</div>
 		

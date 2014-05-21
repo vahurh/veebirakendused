@@ -8,15 +8,15 @@
 	<div class="row eesti-suured">
 		<div class = "bigHighlight col-sm-6">
 			<div class = "bigHighlight-photo">
-				<g:link controller="article" action="show" params =  "[id:articles[0].id]">
+				<g:remoteLink controller="article" action="show" params ="[id:articles[0].id]" update = "mainContent" onSuccess =  "articleLink(${articles[0].id})">
 					<img class="bigHighlight-img img-responsive" src="${createLink(controller:'article', action:'displayImage', id: articles[0].id ) }" />
-				</g:link>
+				</g:remoteLink>
 			</div>
 
 			<div id = "bigHighlight-title">
-				<g:link controller="article" action="show" params =  "[id:articles[0].id]">
+				<g:remoteLink controller="article" action="show" params =  "[id:articles[0].id]" update = "mainContent" onSuccess =  "articleLink(${articles[0].id})">
 					<strong>${articles[0].title}</strong>
-				</g:link>
+				</g:remoteLink>
 			</div>
 
 			<div id = "bigHighlight-intro">
@@ -27,15 +27,15 @@
 		<div class = "bigMedium col-sm-6">
 
 			<div class = "bigMedium-photo">
-				<g:link controller="article" action="show" params =  "[id:articles[1].id]">
+				<g:remoteLink controller="article" action="show" params =  "[id:articles[1].id]" update = "mainContent" onSuccess =  "articleLink(${articles[1].id})">
 					<img class="bigMedium-img img-responsive" src="${createLink(controller:'article', action:'displayImage', id: articles[1].id ) }" />
-				</g:link>
+				</g:remoteLink>
 			</div>
 
 			<div id = "bigMedium-title">
-				<g:link controller="article" action="show" params =  "[id:articles[1].id]">
+				<g:remoteLink controller="article" action="show" params =  "[id:articles[1].id]" update = "mainContent" onSuccess =  "articleLink(${articles[1].id})">
 					<strong>${articles[1].title}</strong>
-				</g:link>
+				</g:remoteLink>
 			</div>
 
 			<div id = "bigMedium-intro">
@@ -48,15 +48,15 @@
 
 		<div id = "bigTitles">
 			<div class= "bigTitles-title col-sm-6">
-				<g:link controller="article" action="show" params =  "[id:articles[2].id]">
+				<g:remoteLink controller="article" action="show" params =  "[id:articles[2].id]" update = "mainContent" onSuccess =  "articleLink(${articles[2].id})">
 					<strong>${articles[2].title}</strong>
-				</g:link>
+				</g:remoteLink>
 			</div>
 
 			<div class= "bigTitles-title col-sm-6">
-				<g:link controller="article" action="show" params =  "[id:articles[3].id]">
+				<g:remoteLink controller="article" action="show" params =  "[id:articles[3].id]" update = "mainContent" onSuccess =  "articleLink(${articles[3].id})">
 					<strong>${articles[3].title}</strong>
-				</g:link>
+				</g:remoteLink>
 			</div>
 		</div>
 	</div>
@@ -71,15 +71,15 @@
 	<div class="row valismaa-suured">
 		<div class = "bigHighlight col-sm-6">
 			<div class = "bigHighlight-photo">
-				<g:link controller="article" action="show" params =  "[id:articles[2].id]">
+				<g:remoteLink controller="article" action="show" params =  "[id:articles[2].id]" update = "mainContent" onSuccess =  "articleLink(${articles[2].id})">
 					<img class="bigHighlight-img img-responsive" src="${createLink(controller:'article', action:'displayImage', id: articles[2].id ) }" />
-				</g:link>
+				</g:remoteLink>
 			</div>
 
 			<div id = "bigHighlight-title">
-				<g:link controller="article" action="show" params =  "[id:articles[2].id]">
+				<g:remoteLink controller="article" action="show" params =  "[id:articles[2].id]" update = "mainContent" onSuccess =  "articleLink(${articles[2].id})">
 					<strong>${articles[2].title}</strong>
-				</g:link>
+				</g:remoteLink>
 			</div>
 
 			<div id = "bigHighlight-intro">
@@ -90,15 +90,15 @@
 		<div class = "bigMedium col-sm-6">
 
 			<div class = "bigMedium-photo">
-				<g:link controller="article" action="show" params =  "[id:articles[3].id]">
+				<g:remoteLink controller="article" action="show" params =  "[id:articles[3].id]" update = "mainContent" onSuccess =  "articleLink(${articles[3].id})">
 					<img class="bigMedium-img img-responsive" src="${createLink(controller:'article', action:'displayImage', id: articles[3].id ) }" />
-				</g:link>
+				</g:remoteLink>
 			</div>
 
 			<div id = "bigMedium-title">
-				<g:link controller="article" action="show" params =  "[id:articles[3].id]">
+				<g:remoteLink controller="article" action="show" params =  "[id:articles[3].id]" update = "mainContent" onSuccess =  "articleLink(${articles[3].id})">
 					<strong>${articles[3].title}</strong>
-				</g:link>
+				</g:remoteLink>
 			</div>
 
 			<div id = "bigMedium-intro">
