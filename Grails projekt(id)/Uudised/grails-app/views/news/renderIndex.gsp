@@ -1,0 +1,90 @@
+		<sec:ifLoggedIn>
+			<div id="createPanel">
+				<g:link controller="article" action="create">Create article</g:link>
+			</div>
+		</sec:ifLoggedIn>
+
+		<div class="row highlight-ads">
+			<div class="col-sm-12 col-md-7">
+				<div id="myCarousel" class="carousel slide">
+
+					<div class="carousel-inner">
+						
+						<g:set var="listNumber" value="${1}"/>
+						%{-- <g:each in="${highlights}"> --}%
+							<g:render template="highlights" collection="${highlights}" var = "article" />
+							%{-- <g:set var="listNumber" value="${listNumber + 1}"/> --}%
+						%{-- </g:each> --}%
+					</div>
+
+					%{-- <ol class="carousel-indicators">
+					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#myCarousel" data-slide-to="1"></li>
+					    <li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol> --}%
+
+					<!-- Controls -->
+				    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				    	<span class="icon-prev"></span>
+				    </a>
+				    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+				    	<span class="icon-next"></span>
+				    </a>
+				</div>
+			</div>
+
+			<div class="col-md-5 hidden-sm hidden-xs">
+				<div class="ad">
+					<img class="img-responsive ad-image" src="images/reklaam.jpg">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-8">
+				<g:render template="bigPanel" model ="[articles: bigPanelNew]" />
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="well poliitika-well">Poliitika</div>
+					</div>	
+					<div class="col-sm-6">
+						<div class="well sport-well"> Sport</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 hidden-xs">
+				<div class="category-header">
+					<h4 class="category">Populaarsed</h4>
+					<hr class="separator"></hr>
+				</div>
+
+				<div class="popular tabbable">
+					<ul id="popTab" class="nav nav-tabs">
+						<li class="active"><a href="#poptäna" data-toggle="tab">Täna</a></li>
+						<li><a href="#popkuul" data-toggle="tab">Sel kuul</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="poptäna">
+							<g:render template="bigPanel" model ="[articles: bigPanelNew]" />
+							%{-- <g:render template="popularPanel" model ="[articles: popularArticles]" /> --}%
+						</div>
+						<div class="tab-pane" id="popkuul">
+							%{-- <g:render template="popularPanel" model ="[articles: popularArticles]" /> --}%
+						</div>
+					</div>
+				</div>
+				
+				<div class="recom tabbable">
+					<ul id="myTab" class="nav nav-tabs">
+						<li class="active"><a href="#soovitused" data-toggle="tab">Soov</a></li>
+						<li><a href="#mingitab" data-toggle="tab">Tab</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="soovitused">Sisu</div>
+						<div class="tab-pane" id="mingitab">Sisu1</div>
+					</div>
+				</div>
+			</div>
+		</div>
